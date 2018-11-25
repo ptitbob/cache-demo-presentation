@@ -1,0 +1,9 @@
+{
+  "title":"Presentation de glowroot",
+  "theme":"ptitbob",
+  "controls":true,
+  "progress":true,
+  "history":true,
+  "center":true,
+  "transition":"fade"
+}
