@@ -37,7 +37,7 @@
 
 -@-
 
-# Best pratices
+# Best practices
 
 -@@-
 <!-- .slide: data-background="./images/Wile_E_Coyote_03.png" data-background-size="15%" data-background-position="left bottom" -->

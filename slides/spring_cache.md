@@ -15,8 +15,8 @@
 * @EnableCaching <!-- .element: class="fragment" -->
 * @Cacheable <!-- .element: class="fragment" -->
 * @CacheConfig <!-- .element: class="fragment" -->
-* @CacheEvict<!-- .element: class="fragment" -->
-* @CachePut<!-- .element: class="fragment" -->
+* @CacheEvict <!-- .element: class="fragment" -->
+* @CachePut <!-- .element: class="fragment" -->
 
 -@-
 
@@ -106,7 +106,9 @@ Et si en plus la méthode a plusieurs paramètres ?
 TeamWithDetails buildTeam(Team team, Locale locale);
 ```
 
-Utilisation d'expressions `SpEL` 
+Utilisation d'expressions **`SpEL`**
+
+> (**`Sp`**ring **`E`**xpression **`L`**anguage)
 
 -@@-
 
@@ -141,3 +143,145 @@ Optional<Message> findByCode(String code);
 
 *sync ne gere pas les `Optional`*
 
+-@-
+
+## @CacheConfig
+
+Configuration du cache de manière globale pour une classe
+
+-@@-
+
+## @CacheConfig
+
+```java
+@CacheConfig(cacheNames = "messages")
+public interface MessageRepository ... {
+  ...
+}
+```
+
+-@@-
+
+## @CacheConfig
+
+```java
+@CacheConfig(cacheNames = {"messages"})
+public interface MessageRepository ... {
+  ...
+}
+```
+
+> On peut définir plusieurs caches
+
+-@@-
+
+## @CacheConfig
+
+```java
+@CacheConfig(cacheNames = {"messages", "cache2"})
+public interface MessageRepository ... {
+  ...
+}
+```
+
+> On peut définir plusieurs caches
+
+-@@-
+
+## @CacheConfig
+
+*La déclaration d'une mise en cache devient*
+
+```java
+@CacheConfig(cacheNames = "messages")
+public interface MessageRepository ... {
+  ...
+  @Cacheable(unless = "#result == null")
+  Optional<Message> findByCode(String code);
+  ...
+}
+```
+
+-@-
+
+## @CacheEvict
+
+Permet la suppression d'une valeur
+
+> rendre le cache consistant
+
+-@@-
+
+## @CacheEvict
+
+```java
+@CacheEvict(key = "#p0.code")
+void delete(Message message);
+```
+
+> Utilisation `SpEL` afin de preciser la clé.
+
+-@@-
+
+## @CacheEvict
+
+*Et suppression de toutes les valeurs*<!-- .element style="color: crimson;" -->
+
+```java
+@CacheEvict(allEntries = true)
+void deleteAll(List<Message> messageList);
+```
+
+-@-
+
+## @CachePut
+
+*Injecter ou mettre à jour une valeur*
+
+> rendre le cache consistant
+
+-@@-
+
+## @CachePut
+
+```java
+@CachePut(key = "#result.code", condition = "#result != null")
+Message save(Message message);
+```
+
+> Dans ce cas, le code fait un `create` et un `update`
+
+-@-
+
+***En conclusion***
+
+* `@Cacheable` : Accès à la donnée en cache
+* .............  Permet la mise en cache à l'accès <!-- .element class="fragment" -->
+* `@CacheEvict` : Suppression d'une(des) valeur(s)
+* `@CachePut` : Mise en cache / MàJ d'une valeur
+
+*`@CacheEvict` & `@CachePut` participe à la cohésion du cache*<!-- .element style="color: #00cc99" -->
+
+-@-
+
+***Au final***
+
+```java
+@CacheConfig(cacheNames = "messages")
+public interface MessageRepository ... {
+
+  @Cacheable(unless = "#result == null")
+  Optional<Message> findByCode(String code);
+
+  @CacheEvict(key = "#p0.code")
+  void delete(Message message);
+
+  @CachePut(key = "#result.code", condition = "#result != null")
+  Message save(Message message);
+
+}
+```
+
+-@-
+
+# Démo
