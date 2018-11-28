@@ -15,3 +15,63 @@
 * Limite la quantité de donnée cachée
 * Durée de vie du cache
 
+-@@-
+
+### Solutions ?
+
+* Limite la quantité de donnée cachée --> heap size
+* Durée de vie du cache --> TTL
+
+-@@-
+
+## Cache spring simple
+
+Exposition d'un `@Bean` pour le cache mamanger
+
+-@@-
+
+## Cache spring simple
+
+```java
+@Configuration
+public class CachingConfig {
+    @Bean
+    public CacheManager cacheManager() {
+        return new ConcurrentMapCacheManager("messages");
+    }
+}
+```
+
+-@@-
+
+## Cache spring simple
+
+Pratique pour un POC
+
+Simple
+
+Mais<!-- .element class="fragment" style="font-family: 'Sedgwick Ave', cursive; font-size: 1.5em; color: crimson;" -->
+
+-@@-
+
+## Cache spring simple
+
+Peu ou pas configurable
+
+Pas de gestion de la taille du heap
+
+Pas de durée de vie
+
+notes:
+Pas de templating non plus
+-@@-
+
+## ehCache
+
+lib OSS
+
+A inspiré la JSR 107
+
+Porté par Terracotta
+
+Element (un des) par défaut SpringBoot
