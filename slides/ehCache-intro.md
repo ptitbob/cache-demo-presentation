@@ -1,29 +1,3 @@
-*Si aucune délétion*
-
-*Les données reste en permanence dans le cache*
-
--@@-
-<!-- .slide: data-background="./images/nuclear-explosion.jpg" data-background-size="100%" data-background-position="center center" -->
-# problème <!-- .element style="color: black; font-family: 'Bangers', cursive;" -->
-
-## Out Of Memory <!-- .element class="fragment" style="color: white; font-family: 'Bangers', cursive;" -->
-
--@@-
-
-### Solutions ?
-
-* Limite la quantité de donnée cachée
-* Durée de vie du cache
-
--@@-
-
-### Solutions ?
-
-* Limite la quantité de donnée cachée --> heap size
-* Durée de vie du cache --> TTL
-
--@@-
-
 ## Cache spring simple
 
 Exposition d'un `@Bean` pour le cache mamanger
@@ -66,24 +40,30 @@ notes:
 Pas de templating non plus
 -@@-
 <!-- .slide: data-background="./images/Wile_E_Coyote_06.png" data-background-size="24%" data-background-position="left bottom" -->
-## Cache spring simple
+*Si aucune délétion*
 
-Peu ou pas configurable
+*Les données reste*
 
-Pas de gestion de la taille du heap
+*en permanence dans le cache*
 
-Pas de durée de vie
+-@@-
+<!-- .slide: data-background="./images/nuclear-explosion.jpg" data-background-size="100%" data-background-position="center center" -->
+# problème <!-- .element style="color: black; font-family: 'Bangers', cursive;" -->
 
-notes:
-Pas de templating non plus
+## Out Of Memory <!-- .element class="fragment" style="color: white; font-family: 'Bangers', cursive;" -->
+
 -@@-
 
-## ehCache
+### Solutions ?
 
-lib OSS
+* Limite la quantité de donnée cachée
+* Durée de vie du cache
 
-A inspiré la JSR 107
+-@@-
 
-Porté par Terracotta
+### Solutions ?
 
-Element (un des) par défaut SpringBoot
+* Limite la quantité de donnée cachée --> heap size
+* Durée de vie du cache --> TTL
+
+
