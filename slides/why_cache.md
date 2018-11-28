@@ -3,6 +3,11 @@
 > ça sert à quoi ?
 
 -@@-
+<!-- .slide: data-background="./images/Wile_E_Coyote_08.png" data-background-size="11%" data-background-position="left 3% bottom" -->
+
+***Le but d'un cache est de stocker des données temporaire en esperant que l'application devienne plus rapide***<!-- .element style="font-family: 'Sedgwick Ave', cursive; font-size: 1.7em;" -->
+
+-@@-
 
 ## Latence <!-- .slide: data-background="./images/bunny_02.png" data-background-size="20%" data-background-position="right top" -->
 
