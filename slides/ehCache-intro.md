@@ -65,6 +65,18 @@ Pas de durée de vie
 notes:
 Pas de templating non plus
 -@@-
+<!-- .slide: data-background="./images/Wile_E_Coyote_06.png" data-background-size="24%" data-background-position="left bottom" -->
+## Cache spring simple
+
+Peu ou pas configurable
+
+Pas de gestion de la taille du heap
+
+Pas de durée de vie
+
+notes:
+Pas de templating non plus
+-@@-
 
 ## ehCache
 
