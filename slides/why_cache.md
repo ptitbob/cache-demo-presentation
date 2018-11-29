@@ -56,8 +56,9 @@ Temps que dure une opération avant d'obtenir le resultat
 * DDR3 18952 : 20 Go/s (théorique)
 
 -@@-
+<!-- .slide: data-background="./images/road-runner.gif" -->
 
-## cacher des données en mémoire
+## La mémoire... <!-- .element style="font-family: 'Sedgwick Ave', cursive; color: gold;" -->
 
-# est très rapide
+# est la meilleure solution <!-- .element class="fragment" style="font-family: 'Sedgwick Ave', cursive; font-size: 3em; color: white; text-shadow: 2px 2px cornflowerblue;" -->
 

@@ -20,21 +20,7 @@ Gestion de la taille
 
 Gestion TTL
 
-Via @Bean
-
-Via configuration
-
-Templating
-
--@@-
-
-## ehCache
-
-Gestion de la taille
-
-Gestion TTL
-
-Via @Bean<!-- .element style="text-decoration:line-through;" -->
+Via @Bean<!-- .element class="fragment fade-out" -->
 
 Via configuration
 

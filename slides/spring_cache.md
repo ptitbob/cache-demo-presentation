@@ -12,11 +12,11 @@
 
 > Annotations de gestion du cache
 
-* @EnableCaching <!-- .element: class="fragment" -->
-* @Cacheable <!-- .element: class="fragment" -->
-* @CacheConfig <!-- .element: class="fragment" -->
-* @CacheEvict <!-- .element: class="fragment" -->
-* @CachePut <!-- .element: class="fragment" -->
+* @EnableCaching 
+* @Cacheable 
+* @CacheConfig 
+* @CacheEvict 
+* @CachePut 
 
 -@-
 
