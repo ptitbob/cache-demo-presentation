@@ -229,7 +229,7 @@ void delete(Message message);
 
 ```java
 @CacheEvict(allEntries = true)
-void deleteAll(List<Message> messageList);
+void deleteAll();
 ```
 
 -@-
