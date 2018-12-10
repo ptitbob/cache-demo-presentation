@@ -3,9 +3,9 @@
 > ça sert à quoi ?
 
 -@@-
-<!-- .slide: data-background="./images/Wile_E_Coyote_08.png" data-background-size="11%" data-background-position="left 3% bottom" -->
+<!-- .slide: data-background="./images/road-runner.gif" -->
 
-***Le but d'un cache est de stocker des données temporaire en esperant que l'application devienne plus rapide***<!-- .element style="font-family: 'Sedgwick Ave', cursive; font-size: 1.7em;" -->
+***Le but d'un cache est de stocker des données temporaire en esperant que l'application devienne plus rapide***<!-- .element style="font-family: 'Sedgwick Ave', cursive; font-size: 2em; color: white; text-shadow: 5px 5px black;" -->
 
 -@@-
 
@@ -54,11 +54,4 @@ Temps que dure une opération avant d'obtenir le resultat
 * DDR3 1600 : 12.8 Go/s (théorique)
 * ...
 * DDR3 18952 : 20 Go/s (théorique)
-
--@@-
-<!-- .slide: data-background="./images/road-runner.gif" -->
-
-## La mémoire... <!-- .element style="font-family: 'Sedgwick Ave', cursive; color: gold;" -->
-
-# est la meilleure solution <!-- .element class="fragment" style="font-family: 'Sedgwick Ave', cursive; font-size: 3em; color: white; text-shadow: 2px 2px cornflowerblue;" -->
 
