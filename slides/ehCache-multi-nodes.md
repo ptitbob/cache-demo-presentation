@@ -94,11 +94,4 @@ C'est la solution actuelle d'AVISé et de l'éditique
 
 > mais ce n'est pas satisfaisant<!-- .element class="fragment" -->
 
--@-
-
-## Solution ?
-
-1. synchroniser les caches <!-- .element style="text-decoration: line-through;" -->
-2. Utilisation d'un cache commun
-
 
