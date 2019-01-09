@@ -1,5 +1,3 @@
--@-
-
 ### Multi node ?
 
 ![](images/multi-node-inmem-01.png)
@@ -72,7 +70,11 @@
 
 ### Synchronisation des caches
 
-Impossibilité de gérer simplement la suppression<!-- .element class="fragment" style="color: crimson;" -->
+Impossibilité de gérer simplement la suppression<!-- .element style="color: crimson;" -->
+
+La mutiplication des noeuds réduit l'efficacité du cache<!-- .element style="color: crimson;" -->
+
+> Synchronisation seulement pour l'invalidation des / d'un cache (ou d'une valeur)
 
 -@@- 
 
@@ -80,11 +82,8 @@ Impossibilité de gérer simplement la suppression<!-- .element class="fragment"
 
 Obligation de persistance des message d'invalidation de cache<!-- .element style="color: crimson;" -->
 
--@@- 
-
-### Synchronisation des caches
-
-La mutiplication des noeuds réduit l'efficacité du cache<!-- .element style="color: crimson;" -->
+> Gestion alternative
+> (code supplémentaire)
 
 -@@-
 
@@ -92,6 +91,6 @@ La mutiplication des noeuds réduit l'efficacité du cache<!-- .element style="c
 
 C'est la solution actuelle d'AVISé et de l'éditique
 
-> mais ce n'est pas satisfaisant<!-- .element class="fragment" -->
+> mais ce n'est pas satisfaisant<!-- .element class="fragment" style="color: crimson;" -->
 
 

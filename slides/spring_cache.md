@@ -225,6 +225,18 @@ void delete(Message message);
 
 ## @CacheEvict
 
+```java
+@CacheEvict(key = "#message.code")
+void delete(Message message);
+```
+
+> Utilisation `SpEL` afin de preciser la clé.
+> Utilisation du nom des paramètres
+
+-@@-
+
+## @CacheEvict
+
 *Et suppression de toutes les valeurs*<!-- .element style="color: crimson;" -->
 
 ```java
@@ -273,7 +285,7 @@ public interface MessageRepository ... {
   @Cacheable(unless = "#result == null")
   Optional<Message> findByCode(String code);
 
-  @CacheEvict(key = "#p0.code")
+  @CacheEvict(key = "#message.code")
   void delete(Message message);
 
   @CachePut(key = "#result.code", condition = "#result != null")
@@ -281,7 +293,3 @@ public interface MessageRepository ... {
 
 }
 ```
-
--@-
-
-# Démo

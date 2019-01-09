@@ -171,7 +171,6 @@ Temps de presence d'un élément sans accès
 ```
 > `T`ime `T`o `I`dle
 
-***Attention, `TTI` n'est pas `JSR107` compliant***<!-- .element style="color: crimson" -->
 
 -@@-
 

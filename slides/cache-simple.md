@@ -1,6 +1,17 @@
 ## Cache spring simple
 
-Exposition d'un `@Bean` pour le cache mamanger
+Exposition d'un `@Bean` pour le cache manager
+
+-@@-
+
+## Les dépendances
+
+```xml
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-cache</artifactId>
+</dependency>
+```
 
 -@@-
 
@@ -30,7 +41,7 @@ Mais<!-- .element class="fragment" style="font-family: 'Sedgwick Ave', cursive; 
 
 ## Cache spring simple
 
-Peu ou pas configurable
+Peu ou pas paramétrable à la demande
 
 Pas de gestion de la taille du heap
 
@@ -66,4 +77,14 @@ Pas de templating non plus
 * Limite la quantité de donnée cachée --> heap size
 * Durée de vie du cache --> TTL
 
+-@@-
+
+### Solutions ?
+
+> Solution permettant une gestion du cache
+> local et/ou distribué
+
+* ehCache
+* Redis
+* Hazelcast
 
