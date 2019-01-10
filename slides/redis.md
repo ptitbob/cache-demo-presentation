@@ -91,6 +91,22 @@ Facile a monitorer via le CLI
 
 -@@-
 
+## Redis - docker
+
+```yaml
+  redis:
+    image: redis:5.0
+    container_name: redis
+    ports:
+      - 6379:6379
+    networks:
+      - cache_net
+```
+
+`docker-compose.yml`
+
+-@@-
+
 # Demo
 
 -@@-
