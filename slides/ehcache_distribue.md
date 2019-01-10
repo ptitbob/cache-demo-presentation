@@ -1,6 +1,15 @@
+
 ## ehCache distribué
 
-Serveur OSS<!-- .element class="fragment" -->
+...
+
+-@@-
+
+<!-- .slide: data-background="./images/oss117.png" data-background-size="40%" data-background-position="right 0 bottom 0em" -->
+
+## ehCache distribué
+
+Serveur OSS
 
 -@@-
 

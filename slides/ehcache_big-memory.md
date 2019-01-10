@@ -25,7 +25,7 @@
 
 -@@-
 
-## ehCache et la mémoire
+## ehCache et débordement
 
 *ou aussi appelé gestion par tiers*
 

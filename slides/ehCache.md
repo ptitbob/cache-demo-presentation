@@ -1,4 +1,5 @@
-# ehCache<!-- .element style="font-family: 'Sedgwick Ave', cursive; "--> 
+<!-- .slide: data-background="./images/ehcache-logo.png" data-background-size="80%" data-background-position="center center" -->
+
 
 -@@-
 
@@ -157,20 +158,6 @@ Temps max de presence d'un élément dans le cache, sans se soucier du nombre d'
 > `T`ime `T`o `I`dle
 
 Temps de presence d'un élément sans accès
-
--@@-
-
-## `ehcache.xml`
-
-```xml
-<cache alias="messages">
-    <expiry>
-        <tti unit="minutes">30</tti>
-    </expiry>
-</cache>
-```
-> `T`ime `T`o `I`dle
-
 
 -@@-
 

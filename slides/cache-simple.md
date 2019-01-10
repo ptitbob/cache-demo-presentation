@@ -74,8 +74,9 @@ Pas de templating non plus
 
 ### Solutions ?
 
-* Limite la quantité de donnée cachée --> heap size
-* Durée de vie du cache --> TTL
+* Limite la quantité de donnée cachée --> **heap size**
+* Durée de vie totale du cache --> **TTL**
+* Durée de vie après accès du cache --> **TTI**
 
 -@@-
 

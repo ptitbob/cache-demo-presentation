@@ -114,6 +114,22 @@ Utilisation d'expressions **`SpEL`**
 
 ### @Cacheable
 
+```java
+@Cacheable(
+  value = "teams", key = "#team.name", unless = "#result == null"
+)
+TeamWithDetails buildTeam(Team team, Locale locale);
+```
+
+Désignation par le nom du parametre
+
+Utilisation d'expressions **`SpEL`**
+
+> (**`Sp`**ring **`E`**xpression **`L`**anguage)
+-@@-
+
+### @Cacheable
+
 Accès concurrentiel
 
 ```java
@@ -123,7 +139,7 @@ Accès concurrentiel
 Message findByCode(String code);
 ```
 
-sync(true) permet l'injection et l'utilisation du cache par 1 thread
+sync(true) permet l'injection et l'utilisation du cache en envirronement multi-thread
 
 
 -@@-
@@ -215,23 +231,12 @@ Permet la suppression d'une valeur
 ## @CacheEvict
 
 ```java
-@CacheEvict(key = "#p0.code")
-void delete(Message message);
-```
-
-> Utilisation `SpEL` afin de preciser la clé.
-
--@@-
-
-## @CacheEvict
-
-```java
 @CacheEvict(key = "#message.code")
 void delete(Message message);
 ```
 
 > Utilisation `SpEL` afin de preciser la clé.
-> Utilisation du nom des paramètres
+> (Utilisation du nom des paramètres)
 
 -@@-
 
@@ -272,7 +277,7 @@ Message save(Message message);
 * `@CacheEvict` : Suppression d'une(des) valeur(s)
 * `@CachePut` : Mise en cache / MàJ d'une valeur
 
-*`@CacheEvict` & `@CachePut` participe à la cohésion du cache*<!-- .element style="color: #00cc99" -->
+*`@CacheEvict` & `@CachePut` participent à la cohésion du cache*<!-- .element style="color: #00cc99" -->
 
 -@-
 
