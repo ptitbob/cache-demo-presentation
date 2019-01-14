@@ -11,6 +11,9 @@
 
 ![](images/cache-concept-00.png)
 
+notes:
+Le systeme de cache de Java
+
 -@@-
 
 ### Concept de cache <!-- .slide: data-background="./images/bunny_01.png" data-background-size="20%" data-background-position="left bottom" -->
@@ -45,6 +48,9 @@
 * Les caches doivent être consistant <!-- .element: class="fragment" -->
 * Un cache par concept fonctionnel <!-- .element: class="fragment" -->
 
+notes: 
+Un objet en cache n'est pas accedé par une seule instance
+
 -@@-
 <!-- .slide: data-background="./images/Wile_E_Coyote_03.png" data-background-size="15%" data-background-position="left bottom" -->
 ## Best practices
@@ -54,3 +60,6 @@
 * Cacher au plus prêt de la donnée <!-- .element: class="fragment" -->
 * Ne pas cacher de valeur null <!-- .element: class="fragment" -->
 
+notes:
+Au plus près de la données, idéalement avant transformation (pour les processus distant)
+Pour les processus couteux ...

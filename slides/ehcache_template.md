@@ -6,9 +6,9 @@
 
 > Empilement de cache
 
-![](images/ehcache_big.png)<!-- .element class="fragment" -->
+![](images/ehcache_big.png)
 
-> 250 lignes !!!<!-- .element class="fragment" -->
+> 250 lignes !!!
 
 -@@-
 

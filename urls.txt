@@ -1,0 +1,26 @@
+-- localhost
+
+http :8080/api/messages/TOT
+http post :8080/api/messages code=AAA message="message AA"
+
+http :8080/api/caches
+http delete :8080/api/caches
+
+--- multi node
+http app.docker.local/api/messages/AAA
+http delete app.docker.local/api/messages/AAA
+
+--- ehcache distribué
+git co ehcache-distribue
+http app.docker.local/api/people/turing-a
+
+
+git co redis-distribue
+docker exec -it redis bash
+    redis-cli
+        monitor
+http app.docker.local/api/people/turing-a
+http delete app.docker.local/api/caches
+
+
+git co hazelcast

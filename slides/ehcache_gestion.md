@@ -16,6 +16,10 @@ Injection du `CacheManager`
 
 ```java
 private final CacheManager cacheManager;
+...
+public CacheService(CacheManager cacheManager) {
+  this.cacheManager = cacheManager;
+}
 ```
 
 -@@-
@@ -72,3 +76,7 @@ this.cacheManager.getCache(cacheName).evict(...)
 A voir dans les branches ehCache : 
 
 ```org.shipstone.....app.service.CacheService```
+
+-@@-
+
+## Démo

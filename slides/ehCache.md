@@ -109,7 +109,7 @@ spring.cache.jcache.config=ehcache.xml
 
 *Taille du heap*
 
-Entries(défaut), B, kB, MB, GB, TB, PB<!-- .element class="fragment" -->
+Entries(défaut), B, kB, MB, GB, TB, PB
 
 -@@-
 
@@ -124,7 +124,7 @@ Entries(défaut), B, kB, MB, GB, TB, PB<!-- .element class="fragment" -->
 ```
 > `T`ime `T`o `L`ive
 
-nanos, micros, millis, seconds(défaut), minutes, hours, days<!-- .element class="fragment" -->
+nanos, micros, millis, seconds(défaut), minutes, hours, days
 
 notes:
 Autant pour la taille ils ont vu grand, pour ttl c'est plus raisonnable
@@ -176,6 +176,3 @@ Temps de presence d'un élément sans accès
 
 *Astuce : Expiration avant la taille*<!-- .element class="fragment" -->
 
--@@-
-
-# Démo

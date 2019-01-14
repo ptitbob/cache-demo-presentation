@@ -148,6 +148,10 @@ ehcache:
 
 -@@-
 
+## Démo
+
+-@@-
+
 <!-- .slide: data-background="./images/bunny_03.png" data-background-size="20%" data-background-position="right 2.5em bottom 1em" -->
 
 ## ehCache easy !<!-- .element style="font-family: 'Sedgwick Ave', cursive; "--> 
